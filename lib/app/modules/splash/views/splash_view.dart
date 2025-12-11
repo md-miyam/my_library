@@ -5,7 +5,6 @@ import 'package:lottie/lottie.dart';
 import 'package:my_library/app/data/app_colors.dart';
 import 'package:my_library/app/data/app_text_styles.dart';
 import 'package:my_library/app/data/image_path.dart';
-
 import '../controllers/splash_controller.dart';
 
 class SplashView extends GetView<SplashController> {
@@ -27,10 +26,9 @@ class SplashView extends GetView<SplashController> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                SizedBox(),
+                const SizedBox(),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.asset(ImagePath.logo, height: Get.height * .10),
                     SizedBox(width: 15.w),
@@ -42,8 +40,8 @@ class SplashView extends GetView<SplashController> {
                     ),
                   ],
                 ),
-                SizedBox(),
-                SizedBox(),
+                const SizedBox(),
+                const SizedBox(),
                 Center(child: Lottie.asset('assets/lottie/loading_gray.json')),
               ],
             ),

@@ -66,6 +66,11 @@ class LogInView extends GetView<LogInController> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(onPressed: () {
+                      Get.snackbar(
+                        "Successful",
+                        "Log in successfully done",
+                      );
+                      Get.offAllNamed(Routes.CUSTOM_BOTTOM_NAVIGATION_BAR);
                     }, child: Text("Log In")),
                   ),
               
