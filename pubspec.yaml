@@ -78,61 +78,37 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Nunito
+    - family: SpaceGrotesk
       fonts:
-        - asset: assets/font/Nunito-ExtraLight.ttf
-          weight: 200
-        - asset: assets/font/Nunito-ExtraLightItalic.ttf
-          weight: 200
-          style: italic
-
-        - asset: assets/font/Nunito-Light.ttf
-          weight: 300
-        - asset: assets/font/Nunito-LightItalic.ttf
-          weight: 300
-          style: italic
-
-        - asset: assets/font/Nunito-Regular.ttf
-          weight: 400
-        - asset: assets/font/Nunito-Italic.ttf
-          weight: 400
-          style: italic
-
-        - asset: assets/font/Nunito-Medium.ttf
-          weight: 500
-        - asset: assets/font/Nunito-MediumItalic.ttf
-          weight: 500
-          style: italic
-
-        - asset: assets/font/Nunito-SemiBold.ttf
-          weight: 600
-        - asset: assets/font/Nunito-SemiBoldItalic.ttf
-          weight: 600
-          style: italic
-
-        - asset: assets/font/Nunito-Bold.ttf
-          weight: 700
-        - asset: assets/font/Nunito-BoldItalic.ttf
-          weight: 700
-          style: italic
-
-        - asset: assets/font/Nunito-ExtraBold.ttf
-          weight: 800
-        - asset: assets/font/Nunito-ExtraBoldItalic.ttf
-          weight: 800
-          style: italic
-
-        - asset: assets/font/Nunito-Black.ttf
-          weight: 900
-        - asset: assets/font/Nunito-BlackItalic.ttf
-          weight: 900
-          style: italic
-
-    - family: Feather
-
+        - asset: assets/fonts/space_grotesk/SpaceGrotesk-Bold.ttf
+        - asset: assets/fonts/space_grotesk/SpaceGrotesk-Light.ttf
+        - asset: assets/fonts/space_grotesk/SpaceGrotesk-Medium.ttf
+        - asset: assets/fonts/space_grotesk/SpaceGrotesk-Regular.ttf
+        - asset: assets/fonts/space_grotesk/SpaceGrotesk-SemiBold.ttf
+    - family: Arial
       fonts:
-        - asset: assets/font/Feather-Bold.ttf
-          weight: 700
+        - asset: assets/fonts/ariel/ARIAL.TTF
+        - asset: assets/fonts/ariel/ARIALBD.TTF
+        - asset: assets/fonts/ariel/ARIALBD 1.TTF
+        - asset: assets/fonts/ariel/ARIALBI.TTF
+        - asset: assets/fonts/ariel/ARIALBI 1.TTF
+        - asset: assets/fonts/ariel/ARIALBLACKITALIC.TTF
+        - asset: assets/fonts/ariel/ArialCE.ttf
+        - asset: assets/fonts/ariel/arialceb.ttf
+        - asset: assets/fonts/ariel/ArialCEBoldItalic.ttf
+        - asset: assets/fonts/ariel/ArialCEItalic.ttf
+        - asset: assets/fonts/ariel/ArialCEMTBlack.ttf
+        - asset: assets/fonts/ariel/ARIALI.TTF
+        - asset: assets/fonts/ariel/ARIALI 1.TTF
+        - asset: assets/fonts/ariel/ARIALLGT.TTF
+        - asset: assets/fonts/ariel/ARIALLGTITL.TTF
+        - asset: assets/fonts/ariel/ArialMdm.ttf
+        - asset: assets/fonts/ariel/ArialMdmItl.ttf
+        - asset: assets/fonts/ariel/ARIALN.TTF
+        - asset: assets/fonts/ariel/ARIALNB.TTF
+        - asset: assets/fonts/ariel/ARIALNBI.TTF
+        - asset: assets/fonts/ariel/ARIALNI.TTF
+        - asset: assets/fonts/ariel/ARIBLK.TTF
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
