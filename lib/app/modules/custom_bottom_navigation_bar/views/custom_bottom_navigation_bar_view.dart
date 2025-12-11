@@ -19,11 +19,11 @@ class CustomBottomNavigationBarView
           onTap: controller.changeIndex,
 
           backgroundColor: AppColors.whiteColor,
-          selectedItemColor: AppColors.selectedBottomNavColor,
-          selectedLabelStyle: AppTextStyles.regular10.copyWith(
-            color: AppColors.selectedBottomNavColor,
+          selectedItemColor: AppColors.selectedBottomNavColor, // selectedBottomNavColor
+          selectedLabelStyle: AppTextStyles.spaceGroteskLarge10.copyWith(
+            color: AppColors.selectedBottomNavColor, // selectedBottomNavColor
           ),
-          unselectedLabelStyle: AppTextStyles.regular10.copyWith(
+          unselectedLabelStyle: AppTextStyles.spaceGroteskLarge10.copyWith(
             color: AppColors.blackColor,
           ),
           unselectedItemColor: AppColors.blackColor,
@@ -75,7 +75,7 @@ class CustomBottomNavigationBarView
             width: 25,
             height: 2.5,
             decoration: BoxDecoration(
-              color: isSelected ? AppColors.selectedBottomNavColor : Colors.transparent,
+              color: isSelected ? AppColors.selectedBottomNavColor : Colors.transparent, // selectedBottomNavColor
               borderRadius: BorderRadius.circular(10),
             ),
           ),
@@ -84,7 +84,7 @@ class CustomBottomNavigationBarView
           // Icon With Color Filter
           ColorFiltered(
             colorFilter: ColorFilter.mode(
-              isSelected ? AppColors.selectedBottomNavColor : AppColors.blackColor,
+              isSelected ? AppColors.selectedBottomNavColor : AppColors.blackColor, // selectedBottomNavColor
               BlendMode.srcIn,
             ),
             child: Image.asset(
