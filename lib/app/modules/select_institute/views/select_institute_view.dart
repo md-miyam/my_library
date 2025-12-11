@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:my_library/app/data/app_colors.dart';
 import 'package:my_library/app/data/image_path.dart';
 import '../../../data/app_text_styles.dart';
+import '../../../routes/app_pages.dart';
 import '../controllers/select_institute_controller.dart';
 
 class SelectInstituteView extends GetView<SelectInstituteController> {
@@ -51,7 +52,7 @@ class SelectInstituteView extends GetView<SelectInstituteController> {
                       if (controller.selectedInstitute.value.isEmpty) {
                         Get.snackbar(
                           "Error",
-                          "Please select an institute",
+                          "Please select your institute",
                           colorText: Colors.red,
                         );
                       } else {
@@ -59,7 +60,7 @@ class SelectInstituteView extends GetView<SelectInstituteController> {
                           "Selected",
                           "You chose: ${controller.selectedInstitute.value}",
                         );
-                        // Navigate to next screen or perform action
+                        Get.toNamed(Routes.SIGN_UP);
                       }
                     },
                     child: const Text("Next"),
