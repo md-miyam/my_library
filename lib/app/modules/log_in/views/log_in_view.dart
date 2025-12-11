@@ -66,7 +66,7 @@ class LogInView extends GetView<LogInController> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(onPressed: () {
-                    }, child: Text("Password")),
+                    }, child: Text("Log In")),
                   ),
               
                   Padding(
@@ -75,7 +75,7 @@ class LogInView extends GetView<LogInController> {
                       firstText: "Don't have an account?",
                       secondText: "Request an account",
                       onTap: () {
-                        Get.toNamed(Routes.SELECT_INSTITUTE);
+                        Get.offAllNamed(Routes.SELECT_INSTITUTE);
                       },
                     ),
                   ),

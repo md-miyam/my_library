@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:my_library/app/data/image_path.dart';
 import '../../data/app_colors.dart';
 import '../../data/app_text_styles.dart';
+import '../../routes/app_pages.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String? title;
@@ -23,7 +26,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         centerTitle: false,
         actions: [
           InkWell(
-            onTap: (){},
+            onTap: (){
+              Get.toNamed(Routes.LOG_IN);
+            },
             child: Image.asset(ImagePath.notificationIcon,height: 24,),
           )
         ],

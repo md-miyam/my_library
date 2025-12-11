@@ -6,6 +6,8 @@ import 'package:my_library/app/modules/common_widget/custom_text_field.dart';
 
 import '../../../data/app_colors.dart';
 import '../../../data/app_text_styles.dart';
+import '../../../routes/app_pages.dart';
+import '../../common_widget/custom_rich_text.dart';
 import '../controllers/sign_up_controller.dart';
 
 class SignUpView extends GetView<SignUpController> {
@@ -114,8 +116,21 @@ class SignUpView extends GetView<SignUpController> {
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () {},
-                      child: Text("Password"),
+                      onPressed: () {
+                        Get.toNamed(Routes.VERIFICATION);
+                      },
+                      child: Text("Send Request"),
+                    ),
+                  ),
+
+                  Padding(
+                    padding: EdgeInsets.symmetric(vertical: 24.h),
+                    child: CustomRichText(
+                      firstText: "Already have an account?",
+                      secondText: "Log In",
+                      onTap: () {
+                        Get.offAllNamed(Routes.LOG_IN);
+                      },
                     ),
                   ),
                 ],
