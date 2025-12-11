@@ -3,14 +3,19 @@ import 'dart:ui';
 class AppColors{
   static const Color whiteColor = Color(0xffFFFFFF);
   static const Color blackColor = Color(0xff000000);
-  static const Color backgroundColor = Color(0xFFF5F5F5);
-  static const Color primaryColor = Color(0xFF000050);
-  static const Color greyButtonColor = Color(0xFFC0C6CD);
-  static const Color hintTextColor = Color(0xFF6D6D6D);
-  static const Color greyOutlineBorderColor = Color(0xFF8F8F8F);
-  // static const Color selectedBottomNavColor = Color(0xFF0089FF);
-  static const Color selectedBottomNavColor = Color(0xFFD4AF37);
-  // static const Color selectedBottomNavColor = Color(0xff7dd7f8);
-  static const Color secondaryColor = Color(0xffa7d6d1);
-}
+  static const Color backgroundColor = Color(0xffFFFFFF);
+  static const Color primaryColor = Color(0xFF1e2755);
+  static const Color secondaryColor = Color(0xFF75b3d1);
+  static const Color primaryTextColor = Color(0xffFFFFFF);
+  static const Color secondaryTextColor = Color(0xFFaaaaaa);
+  static const Color primaryIconColor = Color(0xFF26312D);
+  static const Color secondaryIconColor = Color(0xFFF3F3F3);
 
+  static const Color greyColor = Color(0xFFF3F4F5);
+  static const Color cardGreyColor = Color(0xFFe0e0e0);
+  static const Color textFieldGreyColor = Color(0xFFf3f3f3);
+
+  static const Color selectedBottomNavColor = Color(0xFF75b3d1);
+
+
+}

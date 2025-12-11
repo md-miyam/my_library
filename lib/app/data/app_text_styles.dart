@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'app_colors.dart';
 
 abstract class AppTextStyles {
   // 8.sp
@@ -121,10 +122,36 @@ abstract class AppTextStyles {
   static TextStyle get medium40 => TextStyle(fontSize: 40.sp, fontWeight: FontWeight.w500);
   static TextStyle get bold40 => TextStyle(fontSize: 40.sp, fontWeight: FontWeight.w600);
 
-  // static TextStyle get featherBold12 => TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w700,fontFamily: 'Feather',color: AppColors.headerTextColor);
-  // static TextStyle get featherBold16 => TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w700,fontFamily: 'Feather',color: AppColors.headerTextColor);
-  // static TextStyle get featherBold20 => TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w700,fontFamily: 'Feather',color: AppColors.headerTextColor);
-  // static TextStyle get featherBold24 => TextStyle(fontSize: 24.sp, fontWeight: FontWeight.w700,fontFamily: 'Feather',color: AppColors.headerTextColor);
-  // static TextStyle get featherBold32 => TextStyle(fontSize: 32.sp, fontWeight: FontWeight.w900,fontFamily: 'Feather',color: AppColors.headerTextColor);
+  static TextStyle get spaceGroteskMedium12 => TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w500, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskMedium16 => TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w500, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskMedium20 => TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w500, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskMedium24 => TextStyle(fontSize: 24.sp, fontWeight: FontWeight.w500, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskMedium28 => TextStyle(fontSize: 28.sp, fontWeight: FontWeight.w500, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskMedium32 => TextStyle(fontSize: 32.sp, fontWeight: FontWeight.w500, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskMedium36 => TextStyle(fontSize: 36.sp, fontWeight: FontWeight.w500, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskMedium40 => TextStyle(fontSize: 40.sp, fontWeight: FontWeight.w500, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskLarge12 => TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskLarge16 => TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskLarge20 => TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskLarge24 => TextStyle(fontSize: 24.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskLarge28 => TextStyle(fontSize: 28.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskLarge32 => TextStyle(fontSize: 32.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskLarge36 => TextStyle(fontSize: 36.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
+  static TextStyle get spaceGroteskLarge40 => TextStyle(fontSize: 40.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
 
 }

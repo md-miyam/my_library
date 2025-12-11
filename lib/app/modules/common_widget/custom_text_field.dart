@@ -29,7 +29,7 @@ class CustomTextField extends StatelessWidget {
             style: AppTextStyles.medium16.copyWith(color: AppColors.primaryColor)),
         SizedBox(height: 4),
         TextField(
-          cursorColor: AppColors.greyButtonColor,
+          cursorColor: AppColors.secondaryIconColor,
           controller: controller,
           keyboardType: keyboardType,
           decoration: InputDecoration(
