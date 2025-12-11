@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:my_library/app/data/image_path.dart';
 import '../../data/app_colors.dart';
 import '../../data/app_text_styles.dart';
 
@@ -11,35 +11,22 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 16),
       child: AppBar(
-        backgroundColor: AppColors.whiteColor,
+        backgroundColor: AppColors.backgroundColor,
         elevation: 0,
         scrolledUnderElevation: 0,
         surfaceTintColor: Colors.transparent,
-        leadingWidth: 80,
-        leading: GestureDetector(
-          onTap: () => Get.back(),
-          child: Row(
-            // mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Icon(
-                Icons.arrow_back_ios_rounded,
-                color: AppColors.primaryColor,
-                size: 20,
-              ),
-              const SizedBox(width: 4),
-              Text(
-                "Back",
-                style: AppTextStyles.medium14.copyWith(
-                  color: AppColors.primaryColor,
-                ),
-              ),
-            ],
-          ),
-        ),
-        title: Text(title ?? '', style: AppTextStyles.medium16),
-        centerTitle: true,
+        leadingWidth: 32,
+        leading: Image.asset(ImagePath.institute,height: 10,),
+        title: Text(title ?? '', style: AppTextStyles.bold18),
+        centerTitle: false,
+        actions: [
+          InkWell(
+            onTap: (){},
+            child: Image.asset(ImagePath.notificationIcon,height: 24,),
+          )
+        ],
       ),
     );
   }
