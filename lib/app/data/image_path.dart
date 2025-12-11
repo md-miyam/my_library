@@ -8,6 +8,7 @@ class ImagePath {
   static const String searchIcon = '$baseUrl/search_icon.png';
   static const String homeIcon = '$baseUrl/home_icon.png';
   static const String notificationIcon = '$baseUrl/notification_icon.png';
+  static const String book1 = '$baseUrl/book1.png';
 
 
 }
