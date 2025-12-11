@@ -8,6 +8,7 @@ class CustomTextField extends StatelessWidget {
   final TextInputType? keyboardType;
   final String? hintText;
   final Widget? suffixIcon;
+  final bool obscureText;
 
   const CustomTextField({
     super.key,
@@ -15,18 +16,22 @@ class CustomTextField extends StatelessWidget {
     this.keyboardType,
     this.hintText,
     this.suffixIcon,
+    this.obscureText = false,
   });
 
   @override
   Widget build(BuildContext context) {
-    return  TextField(
-      cursorColor: AppColors.primaryIconColor,
+    return TextFormField(
+      cursorColor: AppColors.secondaryBlackColor,
       cursorHeight: 20.h,
       controller: controller,
       keyboardType: keyboardType,
+      obscureText: obscureText,
       decoration: InputDecoration(
         hintText: hintText,
-        hintStyle: TextStyle(color: AppColors.secondaryTextColor),
+        hintStyle: AppTextStyles.medium13.copyWith(
+          color: AppColors.secondaryTextColor,
+        ),
         suffixIcon: suffixIcon,
       ),
     );

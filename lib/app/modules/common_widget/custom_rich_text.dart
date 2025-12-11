@@ -27,23 +27,23 @@ class CustomRichText extends StatelessWidget {
           flex: 5,
           child: Text(
             firstText,
-            style: AppTextStyles.medium16.copyWith(
-              color: firstTextColor ?? AppColors.primaryColor,
+            style: AppTextStyles.medium12.copyWith(
+              color: firstTextColor ?? AppColors.secondaryTextColor,
             ),
             overflow: TextOverflow.ellipsis,
             maxLines: 1,
           ),
         ),
         Flexible(
-          flex: 3,
+          flex: 5,
           child: InkWell(
             onTap: onTap,
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 4.h),
               child: Text(
                 secondText,
-                style: AppTextStyles.medium16.copyWith(
-                  color: secondTextColor ?? AppColors.primaryColor,
+                style: AppTextStyles.bold12.copyWith(
+                  color: secondTextColor ?? AppColors.blackColor,
                 ),
                 overflow: TextOverflow.ellipsis,
                 maxLines: 1,

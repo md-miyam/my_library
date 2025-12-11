@@ -129,6 +129,8 @@ abstract class AppTextStyles {
 
   static TextStyle get spaceGroteskMedium12 => TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w500, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
 
+  static TextStyle get spaceGroteskMedium13 => TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w500, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
+
   static TextStyle get spaceGroteskMedium16 => TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w500, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
 
   static TextStyle get spaceGroteskMedium20 => TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w500, fontFamily: "SpaceGrotesk", color: AppColors.primaryColor);
@@ -146,22 +148,23 @@ abstract class AppTextStyles {
 
 
 
-  static TextStyle get spaceGroteskLarge10 => TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryIconColor);
+  static TextStyle get spaceGroteskLarge10 => TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.secondaryBlackColor);
 
-  static TextStyle get spaceGroteskLarge12 => TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryIconColor);
+  static TextStyle get spaceGroteskLarge12 => TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.secondaryBlackColor);
 
-  static TextStyle get spaceGroteskLarge16 => TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryIconColor);
+  static TextStyle get spaceGroteskLarge16 => TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.secondaryBlackColor);
 
-  static TextStyle get spaceGroteskLarge20 => TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryIconColor);
+  static TextStyle get spaceGroteskLarge20 => TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.secondaryBlackColor);
 
-  static TextStyle get spaceGroteskLarge24 => TextStyle(fontSize: 24.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryIconColor);
+  static TextStyle get spaceGroteskLarge24 => TextStyle(fontSize: 24.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.secondaryBlackColor);
 
-  static TextStyle get spaceGroteskLarge28 => TextStyle(fontSize: 28.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryIconColor);
+  static TextStyle get spaceGroteskLarge28 => TextStyle(fontSize: 28.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.secondaryBlackColor);
 
-  static TextStyle get spaceGroteskLarge32 => TextStyle(fontSize: 32.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryIconColor);
+  static TextStyle get spaceGroteskLarge32 => TextStyle(fontSize: 32.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.secondaryBlackColor);
 
-  static TextStyle get spaceGroteskLarge36 => TextStyle(fontSize: 36.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryIconColor);
+  static TextStyle get spaceGroteskLarge36 => TextStyle(fontSize: 36.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.secondaryBlackColor);
 
-  static TextStyle get spaceGroteskLarge40 => TextStyle(fontSize: 40.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.primaryIconColor);
+  static TextStyle get spaceGroteskLarge40 => TextStyle(fontSize: 40.sp, fontWeight: FontWeight.w700, fontFamily: "SpaceGrotesk", color: AppColors.secondaryBlackColor);
+
 
 }

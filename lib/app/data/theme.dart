@@ -14,15 +14,16 @@ ThemeData themeData() {
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.all(8),
-        backgroundColor: AppColors.backgroundColor,
-        foregroundColor: AppColors.blackColor,
+        backgroundColor: AppColors.secondaryBlackColor,
+        foregroundColor: AppColors.whiteColor,
+        textStyle: AppTextStyles.spaceGroteskMedium13.copyWith(color: AppColors.whiteColor),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: AppColors.textFieldGreyColor,
-      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      contentPadding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 10.h),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(8),
         borderSide: BorderSide(color: AppColors.secondaryIconColor),
@@ -33,7 +34,7 @@ ThemeData themeData() {
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(8),
-        borderSide: BorderSide(color: AppColors.secondaryIconColor),
+        borderSide: BorderSide(color: AppColors.secondaryBlackColor,width: 1),
       ),
       hintStyle: const TextStyle(color: AppColors.secondaryTextColor),
     ),
@@ -49,3 +50,7 @@ ThemeData themeData() {
     ),
   );
 }
+
+
+
+// SizedBox(width: double.infinity,child: ElevatedButton(onPressed: (){}, child: Text("Password"),)),

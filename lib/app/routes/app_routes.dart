@@ -8,6 +8,7 @@ abstract class Routes {
       _Paths.CUSTOM_BOTTOM_NAVIGATION_BAR;
   static const SPLASH = _Paths.SPLASH;
   static const LOG_IN = _Paths.LOG_IN;
+  static const SELECT_INSTITUTE = _Paths.SELECT_INSTITUTE;
 }
 
 abstract class _Paths {
@@ -16,4 +17,5 @@ abstract class _Paths {
   static const CUSTOM_BOTTOM_NAVIGATION_BAR = '/custom-bottom-navigation-bar';
   static const SPLASH = '/splash';
   static const LOG_IN = '/log-in';
+  static const SELECT_INSTITUTE = '/select-institute';
 }
