@@ -11,6 +11,7 @@ class CustomBottomNavigationBarView
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       bottomNavigationBar: Obx(
             () => BottomNavigationBar(
