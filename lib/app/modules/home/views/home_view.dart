@@ -25,6 +25,7 @@ class HomeView extends GetView<HomeController> {
             // Scrollable Content
             Expanded(
               child: ListView(
+                physics: BouncingScrollPhysics(),
                 children: [
                   _buildCategories(controller),
                   SizedBox(height: 12.h),
@@ -109,7 +110,7 @@ class HomeView extends GetView<HomeController> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("Featured Books", style: AppTextStyles.spaceGroteskLarge20),
+        Text("New Arrivals", style: AppTextStyles.spaceGroteskLarge20),
         ListView.builder(
           itemCount: controller.booksList.length,
           shrinkWrap: true,
@@ -207,3 +208,27 @@ class HomeView extends GetView<HomeController> {
     );
   }
 }
+
+
+
+
+
+// boxShadow: [
+// BoxShadow
+// (
+// color: Colors.grey.shade500,
+// offset: Offset(4.0, 4.0),
+// blurRadius: 15.0,
+// spreadRadius: 1.0,
+// ),
+// BoxShadow(
+// color: Colors.white,
+// offset: Offset(-4.0, -4.0),
+// blurRadius: 15.0,
+// spreadRadius:
+// 1.0
+// ,
+// )
+// ,
+// ]
+// ,
