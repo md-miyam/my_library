@@ -11,6 +11,7 @@ abstract class Routes {
   static const SELECT_INSTITUTE = _Paths.SELECT_INSTITUTE;
   static const SIGN_UP = _Paths.SIGN_UP;
   static const VERIFICATION = _Paths.VERIFICATION;
+  static const EXPLORE = _Paths.EXPLORE;
 }
 
 abstract class _Paths {
@@ -22,4 +23,5 @@ abstract class _Paths {
   static const SELECT_INSTITUTE = '/select-institute';
   static const SIGN_UP = '/sign-up';
   static const VERIFICATION = '/verification';
+  static const EXPLORE = '/explore';
 }
