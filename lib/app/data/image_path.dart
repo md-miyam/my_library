@@ -8,7 +8,15 @@ class ImagePath {
   static const String searchIcon = '$baseUrl/search_icon.png';
   static const String homeIcon = '$baseUrl/home_icon.png';
   static const String notificationIcon = '$baseUrl/notification_icon.png';
-  static const String book1 = '$baseUrl/book1.png';
+  static const String splash = '$baseUrl/splash.png';
+  static const String bookA = "$baseUrl/book_a.png";
+  static const String bookB = "$baseUrl/book_b.png";
+  static const String bookC = "$baseUrl/book_c.png";
+  static const String bookD = "$baseUrl/book_d.png";
+  static const String bookE = "$baseUrl/book_e.png";
+  static const String bookF = "$baseUrl/book_f.png";
+  static const String bookG = "$baseUrl/book_g.png";
+
 
 
 }

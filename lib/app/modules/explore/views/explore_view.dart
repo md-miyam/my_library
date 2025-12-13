@@ -59,7 +59,7 @@ class ExploreView extends GetView<ExploreController> {
                               borderRadius: BorderRadius.circular(8.r)),
                               child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.r),
-                                  child: Image.asset(ImagePath.book1,fit: BoxFit.cover,)),
+                                  child: Image.asset(ImagePath.bookA,fit: BoxFit.cover,)),
                             ),
                             Text("Introduction to Algorithms",style: AppTextStyles.bold16,),
                             SizedBox(height: 4.h,),

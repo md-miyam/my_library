@@ -16,7 +16,7 @@ class ProfileView extends GetView<ProfileController> {
       body: Container(
         height: 250.h,
         decoration: BoxDecoration(
-          color: AppColors.deepGreyColor,
+          color: AppColors.secondaryBlackColor,
           borderRadius: BorderRadius.only(bottomLeft:Radius.circular(40.r) ,bottomRight:Radius.circular( 40.r),)
         ),
         child: Column(

@@ -5,7 +5,7 @@ class CustomBottomNavigationBarBinding extends Bindings {
   @override
   void dependencies() {
     Get.lazyPut<CustomBottomNavigationBarController>(
-          () => CustomBottomNavigationBarController(),
+      () => CustomBottomNavigationBarController(),
     );
     // Get.lazyPut(()=>FrequentlyAskedQusController());
   }
