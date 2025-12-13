@@ -16,6 +16,9 @@ class ImagePath {
   static const String bookE = "$baseUrl/book_e.png";
   static const String bookF = "$baseUrl/book_f.png";
   static const String bookG = "$baseUrl/book_g.png";
+  static const String profile = "$baseUrl/profile.png";
+  static const String profileBackground = "$baseUrl/profile_background.jpg";
+  static const String scan = "$baseUrl/scan.png";
   static const String book1  = "$baseUrl/book_1.jpeg";
   static const String book2  = "$baseUrl/book_2.jpeg";
   static const String book3  = "$baseUrl/book_3.jpeg";

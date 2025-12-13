@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-
 import '../modules/custom_bottom_navigation_bar/bindings/custom_bottom_navigation_bar_binding.dart';
 import '../modules/custom_bottom_navigation_bar/views/custom_bottom_navigation_bar_view.dart';
 import '../modules/explore/bindings/explore_binding.dart';
@@ -8,6 +7,8 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/log_in/bindings/log_in_binding.dart';
 import '../modules/log_in/views/log_in_view.dart';
+import '../modules/profile/bindings/profile_binding.dart';
+import '../modules/profile/views/profile_view.dart';
 import '../modules/select_institute/bindings/select_institute_binding.dart';
 import '../modules/select_institute/views/select_institute_view.dart';
 import '../modules/sign_up/bindings/sign_up_binding.dart';
@@ -16,7 +17,6 @@ import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
 import '../modules/verification/bindings/verification_binding.dart';
 import '../modules/verification/views/verification_view.dart';
-
 part 'app_routes.dart';
 
 class AppPages {
@@ -64,6 +64,11 @@ class AppPages {
       name: _Paths.VERIFICATION,
       page: () => const VerificationView(),
       binding: VerificationBinding(),
+    ),
+    GetPage(
+      name: _Paths.PROFILE,
+      page: () => const ProfileView(),
+      binding: ProfileBinding(),
     ),
   ];
 }

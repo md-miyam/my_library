@@ -13,6 +13,7 @@ class ExploreView extends GetView<ExploreController> {
   Widget build(BuildContext context) {
     final ExploreController controller = Get.put(ExploreController());
     return Scaffold(
+      backgroundColor: Colors.amber.shade100,
       appBar: CustomAppBar(title: 'Tangail Polytechnic Institute'),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.w),
