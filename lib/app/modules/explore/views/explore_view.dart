@@ -34,7 +34,7 @@ class ExploreView extends GetView<ExploreController> {
                   itemCount: 16,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    childAspectRatio: .6.h,
+                    childAspectRatio: Get.height *.00062,
                     crossAxisSpacing: 12,
                     mainAxisSpacing: 12,
                   ),
