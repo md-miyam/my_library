@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'package:get/get.dart';
-
 import '../../../data/app_text_styles.dart';
 import '../../../routes/app_pages.dart';
 import '../../common_widget/custom_rich_text.dart';

@@ -4,7 +4,9 @@ import 'package:get/get.dart';
 import 'package:my_library/app/data/image_path.dart';
 import '../../../data/app_colors.dart';
 import '../../../data/app_text_styles.dart';
+import '../../../routes/app_pages.dart';
 import '../../common_widget/custom_app_bar.dart';
+import '../../explore/views/explore_view.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -41,20 +43,30 @@ class HomeView extends GetView<HomeController> {
 
   // Search Box
   Widget _buildSearchBox() {
-    return Container(
-      margin: EdgeInsets.symmetric(vertical: 12.h),
-      width: double.infinity,
-      decoration: BoxDecoration(
-        color: AppColors.secondaryIconColor,
-        borderRadius: BorderRadius.circular(8.r),
-      ),
-      padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 10.h),
-      child: Row(
-        children: [
-          Image.asset(ImagePath.searchIcon, height: 20.h),
-          SizedBox(width: 12.w),
-          Text("Search for books...", style: AppTextStyles.medium12),
-        ],
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: 12.h),
+      child: InkWell(
+        onTap: () {
+          Get.to(() => ExploreView(),
+            transition: Transition.rightToLeft,
+            duration: Duration(milliseconds: 700),
+          );
+        },
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: AppColors.secondaryIconColor,
+            borderRadius: BorderRadius.circular(8.r),
+          ),
+          padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 10.h),
+          child: Row(
+            children: [
+              Image.asset(ImagePath.searchIcon, height: 20.h),
+              SizedBox(width: 12.w),
+              Text("Search for books...", style: AppTextStyles.medium12),
+            ],
+          ),
+        ),
       ),
     );
   }

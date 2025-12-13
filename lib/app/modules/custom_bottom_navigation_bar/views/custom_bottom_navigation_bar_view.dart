@@ -13,8 +13,7 @@ class CustomBottomNavigationBarView
   Widget build(BuildContext context) {
 
     return Scaffold(
-      bottomNavigationBar: Obx(
-            () => BottomNavigationBar(
+      bottomNavigationBar: Obx(() => BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           currentIndex: controller.currentIndex.value,
           onTap: controller.changeIndex,
