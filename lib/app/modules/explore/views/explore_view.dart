@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:my_library/app/data/app_colors.dart';
 import 'package:my_library/app/data/app_text_styles.dart';
 import 'package:my_library/app/data/image_path.dart';
+import 'package:my_library/app/modules/custom_bottom_navigation_bar/views/custom_bottom_navigation_bar_view.dart';
 
 import '../../common_widget/custom_app_bar.dart';
 import '../controllers/explore_controller.dart';
@@ -15,7 +16,6 @@ class ExploreView extends GetView<ExploreController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber.shade100,
       appBar: CustomAppBar(title: 'Tangail Polytechnic Institute'),
       body: SafeArea(
         child: SingleChildScrollView(

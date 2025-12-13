@@ -7,6 +7,7 @@ abstract class Routes {
   static const CUSTOM_BOTTOM_NAVIGATION_BAR =
       _Paths.CUSTOM_BOTTOM_NAVIGATION_BAR;
   static const EXPLORE = _Paths.EXPLORE;
+  static const PROFILE = _Paths.PROFILE;
 }
 
 abstract class _Paths {
@@ -14,4 +15,5 @@ abstract class _Paths {
   static const HOME = '/home';
   static const CUSTOM_BOTTOM_NAVIGATION_BAR = '/custom-bottom-navigation-bar';
   static const EXPLORE = '/explore';
+  static const PROFILE = '/profile';
 }
