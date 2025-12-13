@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:my_library/app/data/image_path.dart';
 import '../../../data/app_colors.dart';
 import '../../../data/app_text_styles.dart';
-import '../../../routes/app_pages.dart';
 import '../../common_widget/custom_app_bar.dart';
 import '../../explore/views/explore_view.dart';
 import '../controllers/home_controller.dart';
@@ -47,7 +46,8 @@ class HomeView extends GetView<HomeController> {
       padding: EdgeInsets.symmetric(vertical: 12.h),
       child: InkWell(
         onTap: () {
-          Get.to(() => ExploreView(),
+          Get.to(
+            () => ExploreView(),
             transition: Transition.rightToLeft,
             duration: Duration(milliseconds: 700),
           );
@@ -178,23 +178,35 @@ class HomeView extends GetView<HomeController> {
         ClipRRect(
           borderRadius: BorderRadius.circular(10.r),
           child: Padding(
-            padding: const EdgeInsets.only(top: 20),
-            child: SizedBox(
-              height: 100,
-              child: Image.asset(imagePath, width: double.infinity),
+            padding: EdgeInsets.all(12.sp),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: Image.asset(
+                imagePath,
+                height: 220.h,
+                width: double.infinity,
+                fit: BoxFit.cover,
+              ),
             ),
           ),
         ),
         Positioned(
-          top: 10.h,
-          right: 10.w,
-          child: CircleAvatar(
-            radius: 15.r,
-            backgroundColor: AppColors.secondaryColor,
-            child: Icon(
-              Icons.favorite_border,
-              size: 18.sp,
-              color: Colors.white,
+          top: 15.h,
+          right: 15.w,
+          child: Obx(
+            () => GestureDetector(
+              onTap: controller.tapFev, // toggle function
+              child: CircleAvatar(
+                radius: 15.r,
+                backgroundColor: AppColors.secondaryColor,
+                child: Icon(
+                  controller.isFev.value
+                      ? Icons.favorite
+                      : Icons.favorite_border,
+                  size: 20.sp,
+                  color: controller.isFev.value ? Colors.red : Colors.white,
+                ),
+              ),
             ),
           ),
         ),
@@ -219,10 +231,6 @@ class HomeView extends GetView<HomeController> {
     );
   }
 }
-
-
-
-
 
 // boxShadow: [
 // BoxShadow

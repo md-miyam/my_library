@@ -1,8 +1,9 @@
+import 'package:get/get.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 import '../../../data/image_path.dart';
 
 class HomeController extends GetxController {
-  // Categories
+
 // Categories
   List<Map<String, dynamic>> categoriesBook = [
     {'image': ImagePath.bookA, 'category': "Islamic"},
@@ -189,5 +190,14 @@ class HomeController extends GetxController {
     },
 
   ];
+
+
+
+  RxBool isFev = false.obs;
+
+  void tapFev (){
+    isFev.value = !isFev.value;
+  }
+
 
 }
