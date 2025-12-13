@@ -115,7 +115,6 @@ class HomeView extends GetView<HomeController> {
           itemCount: controller.booksList.length,
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
-          padding: EdgeInsets.symmetric(vertical: 10.h),
           itemBuilder: (context, index) {
             final item = controller.booksList[index];
             return Padding(
@@ -130,7 +129,7 @@ class HomeView extends GetView<HomeController> {
                   children: [
                     _buildBookImage(item['image']),
                     Padding(
-                      padding: EdgeInsets.all(10.w),
+                      padding: EdgeInsets.all(12.w),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -203,7 +202,7 @@ class HomeView extends GetView<HomeController> {
           ),
         ),
         onPressed: () {},
-        child: const Text("Collect This Book"),
+        child: const Text("Borrow Now"),
       ),
     );
   }
