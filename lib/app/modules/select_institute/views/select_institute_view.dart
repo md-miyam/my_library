@@ -100,7 +100,7 @@ class SelectInstituteView extends GetView<SelectInstituteController> {
             overflow: TextOverflow.ellipsis,
           ),
         ),
-        initialValue: controller.selectedInstitute.value.isEmpty
+        value: controller.selectedInstitute.value.isEmpty
             ? null
             : controller.selectedInstitute.value,
         items: controller.govtPolytechnicInstitutes.map((institute) {

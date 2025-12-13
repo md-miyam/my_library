@@ -53,7 +53,7 @@ class LogInView extends GetView<LogInController> {
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 24.h),
                     child: Align(
-                      alignment: AlignmentGeometry.centerRight,
+                      alignment: Alignment.centerRight,
                       child: InkWell(
                         onTap: () {},
                         child: Text(
