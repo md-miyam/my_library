@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:my_library/app/data/app_colors.dart';
 import 'package:my_library/app/data/app_text_styles.dart';
-import 'package:my_library/app/data/image_path.dart';
 import '../../common_widget/custom_app_bar.dart';
 import '../controllers/explore_controller.dart';
 class ExploreView extends GetView<ExploreController> {
@@ -13,7 +12,6 @@ class ExploreView extends GetView<ExploreController> {
   Widget build(BuildContext context) {
     final ExploreController controller = Get.put(ExploreController());
     return Scaffold(
-      backgroundColor: Colors.amber.shade100,
       appBar: CustomAppBar(title: 'Tangail Polytechnic Institute'),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.w),

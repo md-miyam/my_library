@@ -89,7 +89,7 @@ class ProfileView extends GetView<ProfileController> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: AppColors.cardGreyColor,
-                      borderRadius: BorderRadius.circular(16.r),
+                      borderRadius: BorderRadius.circular(8.r),
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
