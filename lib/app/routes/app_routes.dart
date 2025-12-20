@@ -13,6 +13,7 @@ abstract class Routes {
   static const VERIFICATION = _Paths.VERIFICATION;
   static const EXPLORE = _Paths.EXPLORE;
   static const PROFILE = _Paths.PROFILE;
+  static const MY_BOOK = _Paths.MY_BOOK;
 }
 
 abstract class _Paths {
@@ -26,4 +27,5 @@ abstract class _Paths {
   static const VERIFICATION = '/verification';
   static const EXPLORE = '/explore';
   static const PROFILE = '/profile';
+  static const MY_BOOK = '/my-book';
 }
