@@ -15,6 +15,7 @@ class SplashView extends GetView<SplashController> {
     return Scaffold(
       body: Stack(
         children: [
+          const SizedBox(),
           Image.asset(
             ImagePath.splash,
             fit: BoxFit.cover,
@@ -24,7 +25,7 @@ class SplashView extends GetView<SplashController> {
 
           SafeArea(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const SizedBox(),
                 Row(
@@ -41,8 +42,12 @@ class SplashView extends GetView<SplashController> {
                   ],
                 ),
                 const SizedBox(),
-                const SizedBox(),
-                Center(child: Lottie.asset('assets/lottie/loading_gray.json')),
+                Center(
+                  child: Lottie.asset(
+                    'assets/lottie/loading_dots.json',
+                    height: 145,
+                  ),
+                ),
               ],
             ),
           ),
