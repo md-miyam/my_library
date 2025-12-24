@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:my_library/app/data/app_colors.dart';
 import 'package:my_library/app/data/app_text_styles.dart';
 import 'package:my_library/app/data/image_path.dart';
+import 'package:my_library/app/modules/common_widget/custom_elevated_button.dart';
 import '../controllers/my_book_controller.dart';
 
 class MyBookView extends GetView<MyBookController> {
@@ -57,7 +58,7 @@ class MyBookView extends GetView<MyBookController> {
                           children: [
                             Container(
                               height: 40,
-                              width: 180,
+                              width: 150,
                               decoration: BoxDecoration(
                                 color: AppColors.whiteColor,
                                 borderRadius: BorderRadius.circular(24),
@@ -234,8 +235,10 @@ class MyBookView extends GetView<MyBookController> {
                           children: [
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: AppColors.primaryColor
+                                backgroundColor: Colors.red
                                     .withAlpha(150),
+
+
                               ),
                               onPressed: () {},
                               child: Text(
@@ -243,6 +246,7 @@ class MyBookView extends GetView<MyBookController> {
                                 style: AppTextStyles.medium12,
                               ),
                             ),
+
                             SizedBox(width: 5.w),
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
@@ -354,6 +358,7 @@ class MyBookView extends GetView<MyBookController> {
                           child: ElevatedButton(onPressed: () {
 
                           }, child: Text("Borrow Now")),
+
                         ),
                       ],
                     ),
