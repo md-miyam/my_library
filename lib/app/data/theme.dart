@@ -45,7 +45,7 @@ ThemeData themeData() {
         padding: EdgeInsets.symmetric(vertical: 8.h),
         side: const BorderSide(color: AppColors.secondaryIconColor),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-        textStyle: AppTextStyles.medium16,
+        textStyle: AppTextStyles.spaceGroteskMedium13,
       ),
     ),
   );

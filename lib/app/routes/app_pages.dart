@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/book_details/bindings/book_details_binding.dart';
+import '../modules/book_details/views/book_details_view.dart';
 import '../modules/custom_bottom_navigation_bar/bindings/custom_bottom_navigation_bar_binding.dart';
 import '../modules/custom_bottom_navigation_bar/views/custom_bottom_navigation_bar_view.dart';
 import '../modules/explore/bindings/explore_binding.dart';
@@ -80,6 +82,11 @@ class AppPages {
       name: _Paths.MY_BOOK,
       page: () => const MyBookView(),
       binding: MyBookBinding(),
+    ),
+    GetPage(
+      name: _Paths.BOOK_DETAILS,
+      page: () => const BookDetailsView(),
+      binding: BookDetailsBinding(),
     ),
     GetPage(
       name: _Paths.SAVED,
