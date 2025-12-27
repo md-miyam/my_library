@@ -41,9 +41,10 @@ class ExploreView extends GetView<ExploreController> {
                       itemCount: controller.booksList.length,
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
-                        childAspectRatio: Get.height * .00070,
+                        // childAspectRatio: Get.height * .00070,
                         crossAxisSpacing: 12,
                         mainAxisSpacing: 12,
+                        mainAxisExtent: Get.height * .32,
                       ),
                       shrinkWrap: true,
                       primary: false,

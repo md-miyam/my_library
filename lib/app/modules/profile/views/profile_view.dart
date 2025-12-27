@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'package:get/get.dart';
 import 'package:my_library/app/data/app_colors.dart';
 import 'package:my_library/app/data/app_text_styles.dart';
 import 'package:my_library/app/data/image_path.dart';
-import 'package:my_library/app/modules/common_widget/custom_row.dart';
-
-import '../../common_widget/custom_app_bar.dart';
 import '../controllers/profile_controller.dart';
 
 class ProfileView extends GetView<ProfileController> {
@@ -15,178 +11,146 @@ class ProfileView extends GetView<ProfileController> {
 
   @override
   Widget build(BuildContext context) {
+    final controller = ProfileController();
     return Scaffold(
-      appBar: CustomAppBar(title: 'Tangail Polytechnic Institute'),
       body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              height: 160.h,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(ImagePath.profileBackground),
-                  fit: BoxFit.cover,
-                ),
-                color: AppColors.secondaryBlackColor,
-              ),
-              child: Stack(
-                clipBehavior: Clip.none,
-                children: [
-                  Positioned(
-                    bottom: -30.h,
-                    left: 20.w,
-                    child: Container(
-                      height: 110.w,
-                      width: 110.w,
-                      decoration: BoxDecoration(
-                        color: AppColors.cardGreyColor,
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: AppColors.whiteColor,
-                          width: 2,
-                        ),
-                        image: DecorationImage(
-                          image: AssetImage(ImagePath.profile), // profile image
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                  ),
-                  // Edit Icon
-                  Positioned(
-                    bottom: 0,
-                    right: 0,
-                    child: Container(
-                      height: 30.w,
-                      width: 30.w,
-                      decoration: BoxDecoration(
-                        color: AppColors.whiteColor,
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(color: AppColors.blackColor, blurRadius: 4),
-                        ],
-                      ),
-                      child: Icon(
-                        Icons.edit,
-                        size: 16.sp,
-                        color: AppColors.blackColor,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 50.h),
-              child: Column(
+        child: SafeArea(
+          child: Column(
+            children: [
+              buildAppBar(),
+              Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 10.w),
-                    height: 100.h,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: AppColors.cardGreyColor,
-                      borderRadius: BorderRadius.circular(8.r),
+                  buildLibraryCard(),
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 16.w,
+                      vertical: 8,
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "LIBRARY CARD",
-                              style: AppTextStyles.regular16,
-                            ),
-                            Text(
-                              "TPI-D5E-STD1003",
-                              style: AppTextStyles.regular16,
-                            ),
-                          ],
-                        ),
-                        Image.asset(ImagePath.scan, height: 80.h),
-                      ],
+                    child: Text(
+                      "Settings",
+                      style: AppTextStyles.spaceGroteskLarge20,
                     ),
                   ),
-                  SizedBox(height: 20),
+                  ListTile(
+                    onTap: () {},
+                    leading: Image.asset(ImagePath.resetPassword, height: 26),
+                    title: Text("Change password"),
+                    trailing: Icon(Icons.arrow_forward_ios_sharp, size: 16),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    leading: Image.asset(ImagePath.instituteIcon, height: 26),
+                    title: Text("Change your Institution"),
+                    trailing: Icon(Icons.arrow_forward_ios_sharp, size: 16),
+                  ),
+                  ListTile(
+                    onTap: () {},
+                    leading: Image.asset(ImagePath.language, height: 26),
+                    title: Text("Language(Bangla/English)"),
+                    trailing: Icon(Icons.arrow_forward_ios_sharp, size: 16),
+                  ),
+                  ListTile(
+                    // onTap: (){
+                    //   controller.isDarkTap(controller.isDark.value);
+                    // },
+                    leading: Image.asset(ImagePath.lightDark, height: 26),
+                    title: Text("Dark Mode"),
+                    trailing:  Transform.scale(
+                        scale: .8,
+                        child: Obx(() => Switch(
+                          value: controller.isDark.value,
+                          onChanged: controller.isDarkTap,
+                          activeColor: AppColors.primaryColor,
+                        ),),
+                      ),
 
-                  Text(
-                    "Personal info",
-                    style: AppTextStyles.bold20.copyWith(
-                      color: AppColors.blackColor,
-                    ),
                   ),
-                  SizedBox(height: 10),
-                  Container(
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: AppColors.greyColor,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Column(
-                      children: [
-                        CustomRow(text: "Name :   ", subtext: "Borsha"),
-                        CustomRow(text: "Roll :   ", subtext: "668884"),
-                        CustomRow(text: "Reg  :   ", subtext: "1502215367"),
-                        CustomRow(
-                          text: "Dep  :   ",
-                          subtext: "Computer Science  And Technology",
-                        ),
-                        CustomRow(text: "Shift  :   ", subtext: "2 nd"),
-                        CustomRow(text: "Session  :   ", subtext: " 21-22"),
-                        CustomRow(text: " phone  ", subtext: " 013********"),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 10.h),
-                  Text(
-                    "Setting",
-                    style: AppTextStyles.bold20.copyWith(
-                      color: AppColors.blackColor,
-                    ),
-                  ),
-                  buildCard(
-                    title: "Change Password",
-                    leading: Icon(Icons.person),
-                    trailing: Icon(Icons.keyboard_double_arrow_right),
-                  ),
-                  buildCard(
-                    title: "Language(Bangla/English)",
-                    leading: Icon(Icons.language),
-                    trailing: Text('English'),
-                  ),
-                  buildCard(
-                    title: "Dark Mode",
-                    leading: Icon(Icons.dark_mode_outlined),
-                    trailing: Icon(
-                      Icons.dark_mode,
-                      color: AppColors.blackColor,
-                    ),
-                  ),
-                  buildCard(
-                    title: "FAQs & Contact Admin",
-                    leading: Icon(Icons.question_answer),
-                    trailing: Icon(Icons.architecture),
+                  ListTile(
+                    onTap: () {},
+                    leading: Image.asset(ImagePath.faq, height: 26),
+                    title: Text("FAQs & Contact Admin"),
+                    trailing: Icon(Icons.arrow_forward_ios_sharp, size: 16),
                   ),
                 ],
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
   }
-  Card buildCard({
-    required String title,
-    required Widget leading,
-    required Widget trailing,
-  }) {
-    return Card(
-      child: ListTile(leading: leading, title: Text(title), trailing: trailing),
+
+  Padding buildLibraryCard() {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16.h),
+      child: Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.only(top: 40),
+            child: Container(
+              height: 80,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: AppColors.cardGreyColor,
+                borderRadius: BorderRadius.circular(8.r),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("LIBRARY CARD", style: AppTextStyles.medium12),
+                        Text("TPI-D5E-STD1003", style: AppTextStyles.bold12),
+                      ],
+                    ),
+                    Image.asset(ImagePath.scan),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Container buildAppBar() {
+    return Container(
+      height: 160.h,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage(ImagePath.profileBackground),
+          fit: BoxFit.cover,
+        ),
+        color: AppColors.secondaryBlackColor,
+      ),
+      child: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Positioned(
+            bottom: -35.h,
+            left: 20.w,
+            child: Container(
+              height: 110.w,
+              width: 110.w,
+              decoration: BoxDecoration(
+                color: AppColors.cardGreyColor,
+                shape: BoxShape.circle,
+                border: Border.all(color: AppColors.whiteColor, width: 2),
+                image: DecorationImage(
+                  image: AssetImage(ImagePath.profile), // profile image
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
