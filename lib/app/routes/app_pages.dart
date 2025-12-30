@@ -14,6 +14,8 @@ import '../modules/my_book/bindings/my_book_binding.dart';
 import '../modules/my_book/views/my_book_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
 import '../modules/profile/views/profile_view.dart';
+import '../modules/saved/bindings/saved_binding.dart';
+import '../modules/saved/views/saved_view.dart';
 import '../modules/select_institute/bindings/select_institute_binding.dart';
 import '../modules/select_institute/views/select_institute_view.dart';
 import '../modules/sign_up/bindings/sign_up_binding.dart';
@@ -85,6 +87,11 @@ class AppPages {
       name: _Paths.BOOK_DETAILS,
       page: () => const BookDetailsView(),
       binding: BookDetailsBinding(),
+    ),
+    GetPage(
+      name: _Paths.SAVED,
+      page: () => const SavedView(),
+      binding: SavedBinding(),
     ),
   ];
 }
