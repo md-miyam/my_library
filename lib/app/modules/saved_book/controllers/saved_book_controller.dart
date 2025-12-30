@@ -1,23 +1,10 @@
 import 'package:get/get.dart';
 
 class SavedBookController extends GetxController {
-  //TODO: Implement SavedBookController
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
+  RxBool isFev = true.obs;
+
+  void tapFev (){
+    isFev.value = !isFev.value;
   }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
 }

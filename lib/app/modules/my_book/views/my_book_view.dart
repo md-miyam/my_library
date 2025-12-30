@@ -20,13 +20,13 @@ class MyBookView extends GetView<MyBookController> {
         centerTitle: true,
       ),
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16.w),
-          child: Column(
-            children: [
-              SizedBox(
+        child: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 8.w),
+              child: SizedBox(
                 height: 48.h,
-                width: Get.width * .9,
+                width: double.infinity,
                 child: Card(
                   color: AppColors.cardGreyColor.withAlpha(180),
                   shape: RoundedRectangleBorder(
@@ -66,16 +66,16 @@ class MyBookView extends GetView<MyBookController> {
                   ),
                 ),
               ),
+            ),
 
-              Expanded(
-                child: TabBarView(
-                  controller: controller.tabController,
-                  physics: BouncingScrollPhysics(),
-                  children: const [CurrentBookView(), HistoryView()],
-                ),
+            Expanded(
+              child: TabBarView(
+                controller: controller.tabController,
+                physics: BouncingScrollPhysics(),
+                children: const [CurrentBookView(), HistoryView()],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

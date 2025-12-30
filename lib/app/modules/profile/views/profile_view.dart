@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:my_library/app/data/app_colors.dart';
 import 'package:my_library/app/data/app_text_styles.dart';
 import 'package:my_library/app/data/image_path.dart';
+import '../../../routes/app_pages.dart';
 import '../controllers/profile_controller.dart';
 
 class ProfileView extends GetView<ProfileController> {
@@ -56,15 +57,16 @@ class ProfileView extends GetView<ProfileController> {
                     // },
                     leading: Image.asset(ImagePath.lightDark, height: 26),
                     title: Text("Dark Mode"),
-                    trailing:  Transform.scale(
-                        scale: .8,
-                        child: Obx(() => Switch(
+                    trailing: Transform.scale(
+                      scale: .8,
+                      child: Obx(
+                        () => Switch(
                           value: controller.isDark.value,
                           onChanged: controller.isDarkTap,
                           activeColor: AppColors.primaryColor,
-                        ),),
+                        ),
                       ),
-
+                    ),
                   ),
                   ListTile(
                     onTap: () {},
@@ -73,6 +75,23 @@ class ProfileView extends GetView<ProfileController> {
                     trailing: Icon(Icons.arrow_forward_ios_sharp, size: 16),
                   ),
                 ],
+              ),
+
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16.h),
+                child: SizedBox(
+                  width: double.infinity,
+                  child: OutlinedButton.icon(
+                    onPressed: () {
+                      Get.toNamed(Routes.LOG_IN);
+                    },
+                    style: OutlinedButton.styleFrom(
+                      side: const BorderSide(color: Colors.red),
+                    ),
+                    label: Text("Log Out",style: TextStyle(color: Colors.red),),
+                    icon: Icon(Icons.login,color: Colors.red,),
+                  ),
+                ),
               ),
             ],
           ),

@@ -21,13 +21,14 @@ class SavedView extends GetView<SavedController> {
         centerTitle: true,
       ),
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16.w),
-          child: Column(
-            children: [
-              SizedBox(
+        child: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 8.w),
+              child: SizedBox(
                 height: 48.h,
-                width: Get.width * .9,
+                // width: Get.width * .8,
+                width: double.infinity,
                 child: Card(
                   color: AppColors.cardGreyColor.withAlpha(180),
                   shape: RoundedRectangleBorder(
@@ -61,19 +62,19 @@ class SavedView extends GetView<SavedController> {
                   ),
                 ),
               ),
+            ),
 
-              Expanded(
-                child: TabBarView(
-                  controller: controller.tabController,
-                  physics: BouncingScrollPhysics(),
-                  children: const [
-                    SavedBookView(),
-                    PandingRequestView(),
-                  ],
-                ),
+            Expanded(
+              child: TabBarView(
+                controller: controller.tabController,
+                physics: BouncingScrollPhysics(),
+                children: const [
+                  SavedBookView(),
+                  PandingRequestView(),
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
