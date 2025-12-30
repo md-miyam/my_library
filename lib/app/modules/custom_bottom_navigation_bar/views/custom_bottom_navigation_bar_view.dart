@@ -41,7 +41,7 @@ class CustomBottomNavigationBarView
             _bottomNavItem(
               index: 2,
               iconPath: ImagePath.myBookIcon,
-              label: 'My Books',
+              label: 'My Book',
             ),
             _bottomNavItem(
               index: 3,

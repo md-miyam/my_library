@@ -1,9 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:my_library/app/modules/my_book/views/my_book_view.dart';
 import 'package:my_library/app/modules/profile/views/profile_view.dart';
 import '../../explore/views/explore_view.dart';
 import '../../home/views/home_view.dart';
+import '../../saved/views/saved_view.dart';
 
 
 class CustomBottomNavigationBarController extends GetxController {
@@ -12,7 +12,7 @@ class CustomBottomNavigationBarController extends GetxController {
     HomeView(),
     ExploreView(),
     MyBookView(),
-    Container(),
+    SavedView(),
     ProfileView(),
   ];
   void changeIndex(int index){
