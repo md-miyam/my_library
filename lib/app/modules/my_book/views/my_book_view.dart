@@ -28,11 +28,11 @@ class MyBookView extends GetView<MyBookController> {
                 height: 48.h,
                 width: double.infinity,
                 child: Card(
-                  color: AppColors.cardGreyColor.withAlpha(180),
+                  color: AppColors.cardGreyColor,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  elevation: 2.5,
+                  elevation: 1,
                   child: Padding(
                     padding: EdgeInsets.symmetric(
                       vertical: 3.h,
@@ -46,7 +46,7 @@ class MyBookView extends GetView<MyBookController> {
                         isScrollable: false,
                         indicator: BoxDecoration(
                           borderRadius: BorderRadius.circular(8.r),
-                          color: AppColors.whiteColor.withAlpha(200),
+                          color: AppColors.whiteColor,
                         ),
                         indicatorSize: TabBarIndicatorSize.tab,
                         indicatorPadding: EdgeInsets.symmetric(

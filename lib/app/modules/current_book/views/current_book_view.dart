@@ -145,12 +145,18 @@ class CurrentBookView extends GetView<CurrentBookController> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
-                                  "Remaining Time :",
-                                  style: AppTextStyles.regular9.copyWith(
-                                  ),
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
+                                Row(
+                                  children: [
+                                    Icon(Icons.autorenew, size: 12),
+                                    SizedBox(width: 2),
+                                    Text(
+                                      "Remaining Time :",
+                                      style: AppTextStyles.regular9.copyWith(
+                                      ),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ],
                                 ),
                                 Text(
                                   "5 Days Remaining",

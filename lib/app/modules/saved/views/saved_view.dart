@@ -11,6 +11,7 @@ import '../controllers/saved_controller.dart';
 
 class SavedView extends GetView<SavedController> {
   const SavedView({super.key});
+
   @override
   Widget build(BuildContext context) {
     final SavedController controller = Get.put(SavedController());
@@ -27,16 +28,18 @@ class SavedView extends GetView<SavedController> {
               padding: EdgeInsets.symmetric(horizontal: 8.w),
               child: SizedBox(
                 height: 48.h,
-                // width: Get.width * .8,
                 width: double.infinity,
                 child: Card(
-                  color: AppColors.cardGreyColor.withAlpha(180),
+                  color: AppColors.cardGreyColor,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  elevation: 2.5,
+                  elevation: 1,
                   child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: 3.h,horizontal: 2.w),
+                    padding: EdgeInsets.symmetric(
+                      vertical: 3.h,
+                      horizontal: 2.w,
+                    ),
                     child: Expanded(
                       child: TabBar(
                         physics: BouncingScrollPhysics(),
@@ -45,10 +48,13 @@ class SavedView extends GetView<SavedController> {
                         isScrollable: false,
                         indicator: BoxDecoration(
                           borderRadius: BorderRadius.circular(8.r),
-                          color: AppColors.whiteColor.withAlpha(200),
+                          color: AppColors.whiteColor,
                         ),
                         indicatorSize: TabBarIndicatorSize.tab,
-                        indicatorPadding: EdgeInsets.symmetric(horizontal: 2.w,vertical: 0),
+                        indicatorPadding: EdgeInsets.symmetric(
+                          horizontal: 2.w,
+                          vertical: 0,
+                        ),
                         labelStyle: AppTextStyles.spaceGroteskLarge12.copyWith(
                           color: AppColors.selectedBottomNavColor,
                         ),
@@ -68,10 +74,7 @@ class SavedView extends GetView<SavedController> {
               child: TabBarView(
                 controller: controller.tabController,
                 physics: BouncingScrollPhysics(),
-                children: const [
-                  SavedBookView(),
-                  PandingRequestView(),
-                ],
+                children: const [SavedBookView(), PandingRequestView()],
               ),
             ),
           ],
