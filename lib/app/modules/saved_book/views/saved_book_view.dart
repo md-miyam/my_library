@@ -18,7 +18,7 @@ class SavedBookView extends GetView<SavedBookController> {
       body: Padding(
         padding: EdgeInsets.symmetric(vertical: 12.h, horizontal: 8.w),
         child: ListView.builder(
-          itemCount: 20,
+          itemCount: 15,
           padding: EdgeInsets.zero,
           shrinkWrap: true,
           primary: false,
@@ -32,8 +32,7 @@ class SavedBookView extends GetView<SavedBookController> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppColors.cardGreyColor,
                     foregroundColor: AppColors.blackColor,
-                    elevation: 3,
-                    // padding: EdgeInsets.all(8),
+                    textStyle: AppTextStyles.bold14.copyWith(color: AppColors.whiteColor),
                   ),
                   child: Row(
                     children: [
@@ -42,7 +41,7 @@ class SavedBookView extends GetView<SavedBookController> {
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8.r),
                           child: Image.asset(
-                            ImagePath.book1,
+                            ImagePath.book5,
                             height: double.infinity,
                             width: 120.w,
                             fit: BoxFit.cover,
@@ -58,15 +57,16 @@ class SavedBookView extends GetView<SavedBookController> {
                               children: [
                                 Expanded(
                                   child: Text(
-                                    "Introduction to Algorithms Algorithms",
+                                    "Introduction to Algorithms",
+                                    style: AppTextStyles.spaceGroteskLarge14,
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
                                   ),
                                 ),
                                 Obx(
                                   () => SizedBox(
-                                    height: 30.h,
-                                    width: 30.w,
+                                    height: 26.h,
+                                    width: 26.w,
                                     child: ElevatedButton(
                                       onPressed: () {
                                         controller.tapFev();
@@ -81,7 +81,7 @@ class SavedBookView extends GetView<SavedBookController> {
                                         controller.isFev.value
                                             ? Icons.favorite
                                             : Icons.favorite_border,
-                                        size: 20.sp,
+                                        size: 16.sp,
                                         color: controller.isFev.value
                                             ? Colors.red
                                             : Colors.white,
@@ -94,17 +94,19 @@ class SavedBookView extends GetView<SavedBookController> {
 
                             Text(
                               "Thomas H.Cormen",
-                              style: AppTextStyles.medium12,
+                              style: AppTextStyles.regular12,
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                             ),
-
+                            SizedBox(
+                              height: 2.h,
+                            ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
                                   "Ratings :",
-                                  style: AppTextStyles.regular12,
+                                  style: AppTextStyles.regular9,
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                 ),
@@ -112,12 +114,12 @@ class SavedBookView extends GetView<SavedBookController> {
                                   children: [
                                     Icon(
                                       Icons.star,
-                                      size: 10.sp,
+                                      size: 9.sp,
                                       color: Colors.amber,
                                     ),
                                     Text(
-                                      "4.6",
-                                      style: AppTextStyles.regular12,
+                                      "4.6/5",
+                                      style: AppTextStyles.regular9,
                                       maxLines: 1,
                                       overflow: TextOverflow.ellipsis,
                                     ),
@@ -130,13 +132,30 @@ class SavedBookView extends GetView<SavedBookController> {
                               children: [
                                 Text(
                                   "Queue position :",
-                                  style: AppTextStyles.regular12,
+                                  style: AppTextStyles.regular9,
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                 ),
                                 Text(
-                                  "# ${120}",
-                                  style: AppTextStyles.regular12,
+                                  "# ${"A21"}",
+                                  style: AppTextStyles.regular9,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Quantity :",
+                                  style: AppTextStyles.regular9,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                                Text(
+                                  "07",
+                                  style: AppTextStyles.regular9,
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                 ),

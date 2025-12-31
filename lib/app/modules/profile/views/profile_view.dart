@@ -86,7 +86,8 @@ class ProfileView extends GetView<ProfileController> {
                       Get.toNamed(Routes.LOG_IN);
                     },
                     style: OutlinedButton.styleFrom(
-                      side: const BorderSide(color: Colors.red),
+                      side: BorderSide(color: Colors.red.withAlpha(150)),
+                      backgroundColor: Colors.transparent,
                     ),
                     label: Text("Log Out",style: TextStyle(color: Colors.red),),
                     icon: Icon(Icons.login,color: Colors.red,),
