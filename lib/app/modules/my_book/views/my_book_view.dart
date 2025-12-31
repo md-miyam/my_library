@@ -38,30 +38,28 @@ class MyBookView extends GetView<MyBookController> {
                       vertical: 3.h,
                       horizontal: 2.w,
                     ),
-                    child: Expanded(
-                      child: TabBar(
-                        physics: BouncingScrollPhysics(),
-                        dividerColor: Colors.transparent,
-                        controller: controller.tabController,
-                        isScrollable: false,
-                        indicator: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8.r),
-                          color: AppColors.whiteColor,
-                        ),
-                        indicatorSize: TabBarIndicatorSize.tab,
-                        indicatorPadding: EdgeInsets.symmetric(
-                          horizontal: 2.w,
-                          vertical: 0,
-                        ),
-                        labelStyle: AppTextStyles.spaceGroteskLarge12.copyWith(
-                          color: AppColors.selectedBottomNavColor,
-                        ),
-                        unselectedLabelColor: AppColors.blackColor,
-                        tabs: const [
-                          Tab(text: 'Current Book'),
-                          Tab(text: 'History'),
-                        ],
+                    child: TabBar(
+                      physics: BouncingScrollPhysics(),
+                      dividerColor: Colors.transparent,
+                      controller: controller.tabController,
+                      isScrollable: false,
+                      indicator: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8.r),
+                        color: AppColors.whiteColor,
                       ),
+                      indicatorSize: TabBarIndicatorSize.tab,
+                      indicatorPadding: EdgeInsets.symmetric(
+                        horizontal: 2.w,
+                        vertical: 0,
+                      ),
+                      labelStyle: AppTextStyles.spaceGroteskLarge12.copyWith(
+                        color: AppColors.selectedBottomNavColor,
+                      ),
+                      unselectedLabelColor: AppColors.blackColor,
+                      tabs: const [
+                        Tab(text: 'Current Book'),
+                        Tab(text: 'History'),
+                      ],
                     ),
                   ),
                 ),

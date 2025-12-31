@@ -354,7 +354,7 @@ class BookDetailsView extends GetView<BookDetailsController> {
                           SizedBox(width: 7,),
                           Expanded(
                             child: ElevatedButton(onPressed: () {
-
+                              Get.back();
                             }, child: Text("Borrow Now")),
                           ),
                         ],

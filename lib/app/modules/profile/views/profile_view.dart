@@ -83,7 +83,7 @@ class ProfileView extends GetView<ProfileController> {
                   width: double.infinity,
                   child: OutlinedButton.icon(
                     onPressed: () {
-                      Get.toNamed(Routes.LOG_IN);
+                      Get.offAllNamed(Routes.LOG_IN);
                     },
                     style: OutlinedButton.styleFrom(
                       side: BorderSide(color: Colors.red.withAlpha(150)),
