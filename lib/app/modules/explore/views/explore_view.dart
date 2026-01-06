@@ -20,7 +20,9 @@ class ExploreView extends GetView<ExploreController> {
           children: [
             Padding(
               padding: EdgeInsets.symmetric(vertical: 12.h),
-              child: TextField(),
+              child: TextField(
+                autofocus: true,
+              ),
             ),
 
 

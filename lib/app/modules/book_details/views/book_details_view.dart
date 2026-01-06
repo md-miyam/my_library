@@ -323,8 +323,7 @@ class BookDetailsView extends GetView<BookDetailsController> {
                     ),
                     Row(
                       children: [
-                        Obx(
-                              () => Checkbox(
+                        Obx(() => Checkbox(
                             value: controller.checked.value,
                             onChanged: (v) {
                               controller.isChecked(v!);
