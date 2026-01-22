@@ -27,7 +27,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         actions: [
           InkWell(
             onTap: (){
-              Get.toNamed(Routes.LOG_IN);
+
             },
             child: Image.asset(ImagePath.notificationIcon,height: 24,),
           )

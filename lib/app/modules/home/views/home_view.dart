@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:my_library/app/data/image_path.dart';
 import '../../../data/app_colors.dart';
 import '../../../data/app_text_styles.dart';
+import '../../../routes/app_pages.dart';
 import '../../common_widget/custom_app_bar.dart';
 import '../../explore/views/explore_view.dart';
 import '../controllers/home_controller.dart';
@@ -194,16 +195,23 @@ class HomeView extends GetView<HomeController> {
           top: 15.h,
           right: 15.w,
           child: Obx(
-            () => GestureDetector(
-              onTap: controller.tapFev, // toggle function
-              child: CircleAvatar(
-                radius: 15.r,
-                backgroundColor: AppColors.secondaryColor,
+            () => SizedBox(
+              height: 30.h,
+              width: 30.w,
+              child: ElevatedButton(
+                onPressed: () {
+                  controller.tapFev();
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.secondaryColor,
+                  padding: EdgeInsets.all(0),
+                  shape: CircleBorder(),
+                ),
                 child: Icon(
                   controller.isFev.value
                       ? Icons.favorite
                       : Icons.favorite_border,
-                  size: 20.sp,
+                  size: 20,
                   color: controller.isFev.value ? Colors.red : Colors.white,
                 ),
               ),
@@ -225,7 +233,9 @@ class HomeView extends GetView<HomeController> {
             borderRadius: BorderRadius.circular(8.r),
           ),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Get.toNamed(Routes.BOOK_DETAILS);
+        },
         child: const Text("Borrow Now"),
       ),
     );

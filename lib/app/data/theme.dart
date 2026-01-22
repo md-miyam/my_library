@@ -16,7 +16,7 @@ ThemeData themeData() {
         padding: const EdgeInsets.all(8),
         backgroundColor: AppColors.secondaryBlackColor,
         foregroundColor: AppColors.whiteColor,
-        textStyle: AppTextStyles.spaceGroteskMedium13.copyWith(color: AppColors.whiteColor),
+        textStyle: AppTextStyles.spaceGroteskMedium14.copyWith(color: AppColors.whiteColor),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       ),
     ),
@@ -43,14 +43,11 @@ ThemeData themeData() {
         backgroundColor: AppColors.whiteColor,
         foregroundColor: AppColors.blackColor,
         padding: EdgeInsets.symmetric(vertical: 8.h),
-        side: const BorderSide(color: AppColors.secondaryIconColor),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-        textStyle: AppTextStyles.spaceGroteskMedium13,
+        side: const BorderSide(color: AppColors.secondaryBlackColor),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        textStyle: AppTextStyles.spaceGroteskMedium14,
       ),
     ),
   );
 }
 
-
-
-// SizedBox(width: double.infinity,child: ElevatedButton(onPressed: (){}, child: Text("Password"),)),

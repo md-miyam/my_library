@@ -16,6 +16,10 @@ abstract class Routes {
   static const MY_BOOK = _Paths.MY_BOOK;
   static const SAVED = _Paths.SAVED;
   static const BOOK_DETAILS = _Paths.BOOK_DETAILS;
+  static const CURRENT_BOOK = _Paths.CURRENT_BOOK;
+  static const HISTORY = _Paths.HISTORY;
+  static const SAVED_BOOK = _Paths.SAVED_BOOK;
+  static const PANDING_REQUEST = _Paths.PANDING_REQUEST;
 }
 
 abstract class _Paths {
@@ -32,4 +36,8 @@ abstract class _Paths {
   static const MY_BOOK = '/my-book';
   static const BOOK_DETAILS = '/book-details';
   static const SAVED = '/saved';
+  static const CURRENT_BOOK = '/current-book';
+  static const HISTORY = '/history';
+  static const SAVED_BOOK = '/saved-book';
+  static const PANDING_REQUEST = '/panding-request';
 }

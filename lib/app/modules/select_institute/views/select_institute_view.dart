@@ -83,10 +83,6 @@ class SelectInstituteView extends GetView<SelectInstituteController> {
             Icons.school_outlined,
             color: AppColors.secondaryBlackColor,
           ),
-          suffixIcon: Icon(
-            Icons.keyboard_arrow_down,
-            color: AppColors.secondaryBlackColor,
-          ),
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
           contentPadding: EdgeInsets.symmetric(
             horizontal: 14.w,

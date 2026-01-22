@@ -8,6 +8,7 @@ class ImagePath {
   static const String searchIcon = '$baseUrl/search_icon.png';
   static const String homeIcon = '$baseUrl/home_icon.png';
   static const String notificationIcon = '$baseUrl/notification_icon.png';
+  static const String profileBackground = "$baseUrl/profile_background.jpg";
   static const String splash = '$baseUrl/splash.png';
   static const String bookA = "$baseUrl/book_a.png";
   static const String bookB = "$baseUrl/book_b.png";
@@ -17,18 +18,16 @@ class ImagePath {
   static const String bookF = "$baseUrl/book_f.png";
   static const String bookG = "$baseUrl/book_g.png";
   static const String bookH = "$baseUrl/book_h.png";
-  static const String profile = "$baseUrl/profile.png";
-  static const String profileBackground = "$baseUrl/profile_background.jpg";
   static const String scan = "$baseUrl/scan.png";
-  static const String book1  = "$baseUrl/book_1.jpeg";
-  static const String book2  = "$baseUrl/book_2.jpeg";
-  static const String book3  = "$baseUrl/book_3.jpeg";
-  static const String book4  = "$baseUrl/book_4.jpeg";
-  static const String book5  = "$baseUrl/book_5.jpeg";
-  static const String book6  = "$baseUrl/book_6.jpeg";
-  static const String book7  = "$baseUrl/book_7.jpeg";
-  static const String book8  = "$baseUrl/book_8.jpeg";
-  static const String book9  = "$baseUrl/book_9.jpeg";
+  static const String book1 = "$baseUrl/book_1.jpeg";
+  static const String book2 = "$baseUrl/book_2.jpeg";
+  static const String book3 = "$baseUrl/book_3.jpeg";
+  static const String book4 = "$baseUrl/book_4.jpeg";
+  static const String book5 = "$baseUrl/book_5.jpeg";
+  static const String book6 = "$baseUrl/book_6.jpeg";
+  static const String book7 = "$baseUrl/book_7.jpeg";
+  static const String book8 = "$baseUrl/book_8.jpeg";
+  static const String book9 = "$baseUrl/book_9.jpeg";
   static const String book10 = "$baseUrl/book_10.jpeg";
   static const String book11 = "$baseUrl/book_11.jpeg";
   static const String book12 = "$baseUrl/book_12.jpeg";
@@ -45,7 +44,14 @@ class ImagePath {
   static const String book23 = "$baseUrl/book_23.jpeg";
   static const String book24 = "$baseUrl/book_24.jpeg";
   static const String book25 = "$baseUrl/book_25.jpeg";
-
+  static const String profile = "$baseUrl/profile.png";
+  static const String faq = "$baseUrl/faq.png";
+  static const String language = "$baseUrl/language.png";
+  static const String lightDark = "$baseUrl/light_dark.png";
+  static const String logout = "$baseUrl/logout.png";
+  static const String passwordChange = "$baseUrl/password_change.png";
+  static const String resetPassword = "$baseUrl/reset_password.png";
+  static const String instituteIcon = "$baseUrl/institute.png";
 
 
 

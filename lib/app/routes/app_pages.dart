@@ -2,20 +2,28 @@ import 'package:get/get.dart';
 
 import '../modules/book_details/bindings/book_details_binding.dart';
 import '../modules/book_details/views/book_details_view.dart';
+import '../modules/current_book/bindings/current_book_binding.dart';
+import '../modules/current_book/views/current_book_view.dart';
 import '../modules/custom_bottom_navigation_bar/bindings/custom_bottom_navigation_bar_binding.dart';
 import '../modules/custom_bottom_navigation_bar/views/custom_bottom_navigation_bar_view.dart';
 import '../modules/explore/bindings/explore_binding.dart';
 import '../modules/explore/views/explore_view.dart';
+import '../modules/history/bindings/history_binding.dart';
+import '../modules/history/views/history_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/log_in/bindings/log_in_binding.dart';
 import '../modules/log_in/views/log_in_view.dart';
 import '../modules/my_book/bindings/my_book_binding.dart';
 import '../modules/my_book/views/my_book_view.dart';
+import '../modules/panding_request/bindings/panding_request_binding.dart';
+import '../modules/panding_request/views/panding_request_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
 import '../modules/profile/views/profile_view.dart';
 import '../modules/saved/bindings/saved_binding.dart';
 import '../modules/saved/views/saved_view.dart';
+import '../modules/saved_book/bindings/saved_book_binding.dart';
+import '../modules/saved_book/views/saved_book_view.dart';
 import '../modules/select_institute/bindings/select_institute_binding.dart';
 import '../modules/select_institute/views/select_institute_view.dart';
 import '../modules/sign_up/bindings/sign_up_binding.dart';
@@ -92,6 +100,26 @@ class AppPages {
       name: _Paths.SAVED,
       page: () => const SavedView(),
       binding: SavedBinding(),
+    ),
+    GetPage(
+      name: _Paths.CURRENT_BOOK,
+      page: () => const CurrentBookView(),
+      binding: CurrentBookBinding(),
+    ),
+    GetPage(
+      name: _Paths.HISTORY,
+      page: () => const HistoryView(),
+      binding: HistoryBinding(),
+    ),
+    GetPage(
+      name: _Paths.SAVED_BOOK,
+      page: () => const SavedBookView(),
+      binding: SavedBookBinding(),
+    ),
+    GetPage(
+      name: _Paths.PANDING_REQUEST,
+      page: () => const PandingRequestView(),
+      binding: PandingRequestBinding(),
     ),
   ];
 }
